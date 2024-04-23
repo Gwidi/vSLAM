@@ -1,0 +1,100 @@
+%% kalibracja kamery 
+% kuba
+principalPoint=[644.5,355.6];
+focalLength=[983.4,989.3];
+% gwidon 
+% principalPoint=[651.7301,433.2670];
+% focalLength=[951.6815,955.0682];
+imageSize=[720,1280];
+intrinsics=cameraIntrinsics(focalLength,principalPoint,imageSize);
+
+% Connect to the webcam.
+cam = webcam();  % Assumes the default webcam.
+duration=40;
+
+% Rozpocznij pomiar czasu
+startTime = tic;
+isLostTime = tic;
+isLostTime10 = false;
+isLostTime20 = false;
+isLostTime30 = false;
+
+% Create figure windows
+figure(1); % For camera image
+numPoints   = 1600;
+numSkipFrames = 20;
+lastStatus = 0;
+status = 0;
+vslam = monovslam(intrinsics,MaxNumPoints=numPoints,SkipMaxFrames=numSkipFrames);
+isStop = false;
+isLost = false;
+
+
+while ~isStop
+    
+    I=snapshot(cam);
+    I = undistortImage(I, intrinsics);
+    %dispaly current undistorted image from camera
+    figure(1);
+    imshow(I);
+    hold off;
+
+    I=rgb2gray(I);
+    addFrame(vslam,I);
+
+    %% Plot intermediate results and wait until all images are processed
+    while ~isDone(vslam)
+        if hasNewKeyFrame(vslam)
+            isLost = false;
+            plot(vslam);
+            xyzPoints = mapPoints(vslam);
+            [camPoses,viewIds] = poses(vslam);
+            fprintf('Added new Keyframe\n')
+        end
+    end
+    
+    %% Get current status of system
+    lastStatus = status;
+    status = checkStatus(vslam);
+
+    if status == 0
+        isLost = true;
+        if ~(lastStatus == status)
+            fprintf('Lost tracking.\n')
+        end
+    end
+    if status == 2
+        isLost = false;
+        if ~(lastStatus == status)
+            if lastStatus == 0
+                fprintf('Praca wznowniona \n')
+            end
+            fprintf('Frequent Key Frames \n')
+        end
+    end
+    if isLost 
+        tempLostTime = toc(isLostTime);
+        if tempLostTime > 10 && ~isLostTime10
+            isLostTime10 = true;
+            fprintf("tracking lost przez: %.1f sek\n",tempLostTime)
+        elseif tempLostTime > 20 && ~isLostTime20
+            isLostTime20 = true;
+            fprintf("tracking lost przez: %.1f sek\n",tempLostTime)
+        elseif tempLostTime > 30 && ~isLostTime30
+            isLostTime30 = true;
+            fprintf("tracking lost przez: %.1f sek\n",tempLostTime)
+        end 
+        if tempLostTime>duration
+            isStop = true;
+            fprintf("tracking lost przez: %.1f sek\n",tempLostTime)
+            fprintf("zatrzymana praca po: %.1f sek\n",toc(startTime))
+        end
+    else
+        isLostTime10 = false;
+        isLostTime20 = false;
+        isLostTime30 = false;
+        isLostTime = tic;
+    end
+end
+clear cam;
+%%

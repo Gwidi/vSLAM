@@ -9,53 +9,77 @@ imageSize=[720,1280];
 intrinsics=cameraIntrinsics(focalLength,principalPoint,imageSize);
 
 % Connect to the webcam.
-cam = webcam;  % Assumes the default webcam.
-
-duration=30;
+cam = webcam();  % Assumes the default webcam.
+duration=40;
 
 % Rozpocznij pomiar czasu
 startTime = tic;
-duration=60;
+isLostTime = tic;
+isLostTime10 = false;
+isLostTime20 = false;
+isLostTime30 = false;
 
 % Create figure windows
 figure(1); % For camera image
-numPoints   = 1000;
+numPoints   = 1600;
 numSkipFrames = 20;
+lastStatus = 0;
+status = 0;
 vslam = monovslam(intrinsics,MaxNumPoints=numPoints,SkipMaxFrames=numSkipFrames);
+isStop = false;
+isLost = false;
 
 
-while toc(startTime) < duration
+while ~isStop
     
     I=snapshot(cam);
     I = undistortImage(I, intrinsics);
-    addFrame(vslam,I);
-
     %dispaly current undistorted image from camera
     figure(1);
     imshow(I);
     hold off;
-    
-    if hasNewKeyFrame(vslam)
-        % Display 3-D map points and camera trajectory
-        plot(vslam);   
-    end
+
+    I=rgb2gray(I);
+    addFrame(vslam,I);
+
     %% Plot intermediate results and wait until all images are processed
     while ~isDone(vslam)
         if hasNewKeyFrame(vslam)
+            isLost = false;
             plot(vslam);
             xyzPoints = mapPoints(vslam);
             [camPoses,viewIds] = poses(vslam);
+            fprintf('Added new Keyframe\n')
         end
     end
     
     %% Get current status of system
+    lastStatus = status;
     status = checkStatus(vslam);
 
     if status == 0
-        disp('Lost tracking.')
+        isLost = true;
+        if ~(lastStatus == status)
+            fprintf('Lost tracking.\n')
+        end
     end
     if status == 2
-        disp('FrequentKeyFrames') 
+        isLost = false;
+        if ~(lastStatus == status)
+            fprintf('FrequentKeyFrames \n')
+        end
+    end
+    if isLost 
+        tempLostTime = toc(isLostTime);
+        if tempLostTime > 10 && 
+            fprintf("tracking lost przez: %.1f sek\n",tempLostTime)
+        end 
+        if tempLostTime>duration
+            isStop = true;
+            fprintf("zatrzymana praca po: %.1f sek\n",toc(startTime))
+        end
+    else
+        isLostTime = tic;
     end
 end
 clear cam;
