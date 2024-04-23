@@ -10,6 +10,7 @@ intrinsics=cameraIntrinsics(focalLength,principalPoint,imageSize);
 
 % Connect to the webcam.
 cam = webcam();  % Assumes the default webcam.
+duration=60;
 
 % Rozpocznij pomiar czasu
 startTime = tic;
