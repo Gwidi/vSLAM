@@ -8,7 +8,7 @@ vslam = monovslam(intrinsics, MaxNumPoints=1000, SkipMaxFrames=20);
 % Connect to the webcam.
 cam = webcam;  % Assumes the default webcam.
 
-duration=30;
+duration=60;
 
 % Rozpocznij pomiar czasu
 startTime = tic;
