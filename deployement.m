@@ -2,38 +2,50 @@
 % kuba
 principalPoint=[644.5,355.6];
 focalLength=[983.4,989.3];
+
 % gwidon 
 % principalPoint=[651.7301,433.2670];
 % focalLength=[951.6815,955.0682];
+
 imageSize=[720,1280];
 intrinsics=cameraIntrinsics(focalLength,principalPoint,imageSize);
-
+%%parametry 
 % Connect to the webcam.
 cam = webcam();  % Assumes the default webcam.
+
+%Dlugosc czasu zanim funkcja sie wylaczy po uzyskaniu tracking lost.
 duration=40;
 
 % Rozpocznij pomiar czasu
-startTime = tic;
-isLostTime = tic;
+startTime = tic; %od poczatku uruchomienia progrmau 
+isLostTime = tic; %dlugosc czasu na statusie tracking lost
+
+%poprzedni i obecny status obiektu vslam 
+lastStatus = 0;
+status = 0;
+
+%sprawdzanie czy wyslano komunikat o uplywie czasu - status tracking lost
 isLostTime10 = false;
 isLostTime20 = false;
 isLostTime30 = false;
 
-% Create figure windows
+% Konfig obiektu vslam 
 figure(1); % For camera image
 numPoints   = 1600;
 numSkipFrames = 20;
-lastStatus = 0;
-status = 0;
 vslam = monovslam(intrinsics,MaxNumPoints=numPoints,SkipMaxFrames=numSkipFrames);
+
+%warunki sprawdzajace czy aby kontynuowac petle i czy tracking jest
+%zgubiony 
 isStop = false;
 isLost = false;
 
-
+%% petla główna 
 while ~isStop
     
     I=snapshot(cam);
     I = undistortImage(I, intrinsics);
+
     %dispaly current undistorted image from camera
     figure(1);
     imshow(I);
@@ -57,13 +69,13 @@ while ~isStop
     lastStatus = status;
     status = checkStatus(vslam);
 
-    if status == 0
+    if status == 0 % tracking lost
         isLost = true;
         if ~(lastStatus == status)
             fprintf('Lost tracking.\n')
         end
     end
-    if status == 2
+    if status == 2 % odrzucony frame
         isLost = false;
         if ~(lastStatus == status)
             if lastStatus == 0
@@ -72,8 +84,11 @@ while ~isStop
             fprintf('Frequent Key Frames \n')
         end
     end
+    %% instrukcja warunkowa czy system zbugil tracking 
     if isLost 
-        tempLostTime = toc(isLostTime);
+        tempLostTime = toc(isLostTime); 
+
+        % funkcje wysylajace info o czasie w statusie tracking lost
         if tempLostTime > 10 && ~isLostTime10
             isLostTime10 = true;
             fprintf("tracking lost przez: %.1f sek\n",tempLostTime)
@@ -84,12 +99,14 @@ while ~isStop
             isLostTime30 = true;
             fprintf("tracking lost przez: %.1f sek\n",tempLostTime)
         end 
+        % funkcja wychodzaca z petli
         if tempLostTime>duration
             isStop = true;
             fprintf("tracking lost przez: %.1f sek\n",tempLostTime)
             fprintf("zatrzymana praca po: %.1f sek\n",toc(startTime))
         end
     else
+        % resetowanie danych dot. zgubionego trackingu
         isLostTime10 = false;
         isLostTime20 = false;
         isLostTime30 = false;
