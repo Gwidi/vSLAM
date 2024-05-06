@@ -1,11 +1,11 @@
-%% kalibracja kamery 
-% kuba
-principalPoint=[644.5,355.6];
-focalLength=[983.4,989.3];
+% %% kalibracja kamery 
+% % kuba
+% principalPoint=[644.5,355.6];
+% focalLength=[983.4,989.3];
 
 % gwidon 
-% principalPoint=[651.7301,433.2670];
-% focalLength=[951.6815,955.0682];
+principalPoint=[651.7301,433.2670];
+focalLength=[951.6815,955.0682];
 
 imageSize=[720,1280];
 intrinsics=cameraIntrinsics(focalLength,principalPoint,imageSize);
@@ -84,7 +84,7 @@ while ~isStop
             fprintf('Frequent Key Frames \n')
         end
     end
-    %% instrukcja warunkowa czy system zbugil tracking 
+    %% instrukcja warunkowa czy system zgubil tracking 
     if isLost 
         tempLostTime = toc(isLostTime); 
 
@@ -111,6 +111,14 @@ while ~isStop
         isLostTime20 = false;
         isLostTime30 = false;
         isLostTime = tic;
+    end
+    k = waitforbuttonpress;
+    if k == 1 % klucz został naciśnięty
+        key = get(gcf, 'CurrentKey');
+        if strcmp(key, 'escape')
+            isStop = true;
+            fprintf('Program zatrzymany przez użytkownika.\n');
+        end
     end
 end
 clear cam;
