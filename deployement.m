@@ -1,11 +1,11 @@
 % %% kalibracja kamery 
 % % kuba
-% principalPoint=[644.5,355.6];
-% focalLength=[983.4,989.3];
+principalPoint=[644.5,355.6];
+focalLength=[983.4,989.3];
 
 % gwidon 
-principalPoint=[651.7301,433.2670];
-focalLength=[951.6815,955.0682];
+% principalPoint=[651.7301,433.2670];
+% focalLength=[951.6815,955.0682];
 
 imageSize=[720,1280];
 intrinsics=cameraIntrinsics(focalLength,principalPoint,imageSize);
@@ -14,7 +14,7 @@ intrinsics=cameraIntrinsics(focalLength,principalPoint,imageSize);
 cam = webcam();  % Assumes the default webcam.
 
 %Dlugosc czasu zanim funkcja sie wylaczy po uzyskaniu tracking lost.
-duration=40;
+duration=30;
 
 % Rozpocznij pomiar czasu
 startTime = tic; %od poczatku uruchomienia progrmau 
@@ -62,6 +62,7 @@ while ~isStop
             xyzPoints = mapPoints(vslam);
             [camPoses,viewIds] = poses(vslam);
             fprintf('Added new Keyframe\n')
+            featurePlot   = helperVisualizeMatchedFeatures(I, currPoints(indexPairs(:,2)));
         end
     end
     
@@ -112,14 +113,7 @@ while ~isStop
         isLostTime30 = false;
         isLostTime = tic;
     end
-    k = waitforbuttonpress;
-    if k == 1 % klucz został naciśnięty
-        key = get(gcf, 'CurrentKey');
-        if strcmp(key, 'escape')
-            isStop = true;
-            fprintf('Program zatrzymany przez użytkownika.\n');
-        end
-    end
+    
 end
 clear cam;
 %%
