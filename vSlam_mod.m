@@ -41,6 +41,8 @@ vslam = monovslam(intrinsics,MaxNumPoints=numPoints,SkipMaxFrames=numSkipFrames)
 %zgubiony 
 isStop = false;
 isLost = false;
+isMapOn = true; %czy aktywowac i wyswietlac mape
+isCamOn = true; %czy aktywowac i wyswietlac kamere
 
 %skipowanie pierwszych 30 klatek obrazu, aby unikac problemow z pierwsza
 %klatka
@@ -423,85 +425,6 @@ if isLoopClosed
 end
 % 6. Visualization
 
-
-
-
-
-%% petla główna 
-% while ~isStop
-    
-%     I=snapshot(cam);
-%     I = undistortImage(I, intrinsics);
-
-%     %dispaly current undistorted image from camera
-%     figure(1);
-%     imshow(I);
-%     hold off;
-
-%     I=rgb2gray(I);
-%     addFrame(vslam,I);
-
-%     %% Plot intermediate results and wait until all images are processed
-%     while ~isDone(vslam)
-%         if hasNewKeyFrame(vslam)
-%             isLost = false;
-%             plot(vslam);
-%             xyzPoints = mapPoints(vslam);
-%             [camPoses,viewIds] = poses(vslam);
-%             fprintf('Added new Keyframe\n')
-%             featurePlot   = helperVisualizeMatchedFeatures(I, currPoints(indexPairs(:,2)));
-%         end
-%     end
-    
-%     %% Get current status of system
-%     lastStatus = status;
-%     status = checkStatus(vslam);
-
-%     if status == 0 % tracking lost
-%         isLost = true;
-%         if ~(lastStatus == status)
-%             fprintf('Lost tracking.\n')
-%         end
-%     end
-%     if status == 2 % odrzucony frame
-%         isLost = false;
-%         if ~(lastStatus == status)
-%             if lastStatus == 0
-%                 fprintf('Praca wznowniona \n')
-%             end
-%             fprintf('Frequent Key Frames \n')
-%         end
-%     end
-%     %% instrukcja warunkowa czy system zgubil tracking 
-%     if isLost 
-%         tempLostTime = toc(isLostTime); 
-
-%         % funkcje wysylajace info o czasie w statusie tracking lost
-%         if tempLostTime > 10 && ~isLostTime10
-%             isLostTime10 = true;
-%             fprintf("tracking lost przez: %.1f sek\n",tempLostTime)
-%         elseif tempLostTime > 20 && ~isLostTime20
-%             isLostTime20 = true;
-%             fprintf("tracking lost przez: %.1f sek\n",tempLostTime)
-%         elseif tempLostTime > 30 && ~isLostTime30
-%             isLostTime30 = true;
-%             fprintf("tracking lost przez: %.1f sek\n",tempLostTime)
-%         end 
-%         % funkcja wychodzaca z petli
-%         if tempLostTime>duration
-%             isStop = true;
-%             fprintf("tracking lost przez: %.1f sek\n",tempLostTime)
-%             fprintf("zatrzymana praca po: %.1f sek\n",toc(startTime))
-%         end
-%     else
-%         % resetowanie danych dot. zgubionego trackingu
-%         isLostTime10 = false;
-%         isLostTime20 = false;
-%         isLostTime30 = false;
-%         isLostTime = tic;
-%     end
-    
-% end
 clear cam;
 % %%
 
