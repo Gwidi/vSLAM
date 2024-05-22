@@ -1,11 +1,10 @@
 % Inicjalizacja ROS2
-ros2init;
 
 % Tworzenie węzła ROS2
-node = ros2node('/camera_node');
+%node = ros2node('/camera_node',0);
 
 % Tworzenie wydawcy ROS2
-publisher = ros2publisher(node, '/camera_data', 'sensor_msgs/Image');
+%publisher = ros2publisher(node, '/camera_data', 'sensor_msgs/Image');
 
 % Inicjalizacja kamery
 camera = webcam;
@@ -18,7 +17,7 @@ intrinsics=cameraIntrinsics(focalLength,principalPoint,imageSize);
 while true
     % Pobieranie obrazu z kamery
     img = snapshot(camera);
-    img = undistortImage(img, intrinsics);
+    %img = undistortImage(img, intrinsics);
     % Konwersja obrazu na skalę szarości
     gray_img = rgb2gray(img);
     
@@ -31,10 +30,10 @@ while true
     msg.Data = reshape(gray_img', 1, []);
     
     % Publikowanie wiadomości ROS2
-    ros2send(publisher, msg);
+    send(publisher, msg);
     
     % Oczekiwanie na kolejną klatkę
-    pause(0.01);
+    pause(10);
 end
 
 % Zamykanie kamery
@@ -42,4 +41,3 @@ clear camera;
 
 % Zamykanie węzła ROS2
 ros2node('destroy');
-ros2shutdown;
