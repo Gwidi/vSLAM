@@ -1,0 +1,14 @@
+_mexFunction
+_mexfilerequiredapiversion
+_emlrtMexFcnProperties
+_testyCodegena
+_testyCodegena_initialize
+_testyCodegena_terminate
+_testyCodegena_atexit
+_emxFreeStruct_rigidtform3d
+_emxInitStruct_rigidtform3d
+_c_emxFree_images_geotrans_inter
+_emxEnsureCapacity_real_T
+_c_emxInit_images_geotrans_inter
+_emxFree_real_T
+_emxInit_real_T

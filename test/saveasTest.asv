@@ -1,0 +1,8 @@
+cam = webcam();
+I = snapshot(cam);
+I = snapshot(cam);
+for i = 1:10
+tic
+imwrite(I,cat('\img\',''));
+toc
+end

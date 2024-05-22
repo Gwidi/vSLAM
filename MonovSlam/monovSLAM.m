@@ -51,6 +51,8 @@ vslam = monovslam(intrinsics,MaxNumPoints=numPoints,SkipMaxFrames=numSkipFrames,
 %zgubiony 
 isStop = false;
 isLost = false;
+keyFrameCount = 0;
+mkdir('img');
 
 %% petla główna 
 while ~isStop
@@ -64,15 +66,14 @@ while ~isStop
     drawnow;
     hold off;
 
+
     I=rgb2gray(I); %monovslam sam zamienia na skale szarosci
     addFrame(vslam,I);
     %% Plot intermediate results and wait until all images are processed
     while ~isDone(vslam)
         if hasNewKeyFrame(vslam)
             isLost = false;
- 
             plot(vslam); % mozna uzyc paramteru ,"Parent" ale nie wiem jak 
-           
             figure(keyImage)
             imagesc(I);
             colormap('gray');
@@ -80,6 +81,8 @@ while ~isStop
             hold off;
             xyzPoints = mapPoints(vslam);
             [camPoses,viewIds] = poses(vslam);
+            keyFrameCount = keyFrameCount + 1;
+            imwrite(I, cat(2, './img/', num2str(keyFrameCount), '.png')); %'-', char(datetime('now','Format','HH-mm-ss-SSS'))
             % fprintf('Added new Keyframe\n')
             % featurePlot   = helperVisualizeMotionAndStructure(I, currPoints(indexPairs(:,2)));
         end
@@ -97,12 +100,12 @@ while ~isStop
             end
         case 2
             isLost = false;
-        if ~(lastStatus == status)
-            if lastStatus == 0
-                fprintf('Praca wznowniona \n')
+            if ~(lastStatus == status)
+                if lastStatus == 0
+                    fprintf('Praca wznowniona \n')
+                end
+                fprintf('Frequent Key Frames \n')
             end
-            fprintf('Frequent Key Frames \n')
-        end
     end
     %% instrukcja warunkowa czy system zgubil tracking 
     if isLost 
@@ -133,6 +136,6 @@ clear cam;
 function keyPressCallback(~, event)
     if strcmp(event.Key, 'q')
        assignin('base', 'isStop', true);
-        disp('Naciśnięto klawisz "q". Kończenie pętli...');% Zamknięcie okna figure
+        fprintf('Naciśnięto klawisz "q". Kończenie pętli...');% Zamknięcie okna figure
     end
 end

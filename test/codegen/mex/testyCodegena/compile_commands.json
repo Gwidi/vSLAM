@@ -1,0 +1,176 @@
+[
+  {
+    "directory": "/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test/codegen/mex/testyCodegena",
+    "command": "/usr/bin/xcrun -sdk macosx11.3 clang -fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -DMATLAB_MEX_FILE -O2 -DNDEBUG -std=c99 -I \".\" -I \"/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test\" -I \"/Applications/MATLAB_R2024a.app/extern/include\" -I \"/Applications/MATLAB_R2024a.app/extern/include/vslamcore\" -I \"./interface\" -I \".\" -DMODEL=testyCodegena_mex -c  testyCodegena_data.c -o build/maca64/testyCodegena_data.o",
+    "file": "testyCodegena_data.c",
+    "output": "build/maca64/testyCodegena_data.o"
+  },
+  {
+    "directory": "/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test/codegen/mex/testyCodegena",
+    "command": "/usr/bin/xcrun -sdk macosx11.3 clang -fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -DMATLAB_MEX_FILE -O2 -DNDEBUG -std=c99 -I \".\" -I \"/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test\" -I \"/Applications/MATLAB_R2024a.app/extern/include\" -I \"/Applications/MATLAB_R2024a.app/extern/include/vslamcore\" -I \"./interface\" -I \".\" -DMODEL=testyCodegena_mex -c  rt_nonfinite.c -o build/maca64/rt_nonfinite.o",
+    "file": "rt_nonfinite.c",
+    "output": "build/maca64/rt_nonfinite.o"
+  },
+  {
+    "directory": "/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test/codegen/mex/testyCodegena",
+    "command": "/usr/bin/xcrun -sdk macosx11.3 clang -fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -DMATLAB_MEX_FILE -O2 -DNDEBUG -std=c99 -I \".\" -I \"/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test\" -I \"/Applications/MATLAB_R2024a.app/extern/include\" -I \"/Applications/MATLAB_R2024a.app/extern/include/vslamcore\" -I \"./interface\" -I \".\" -DMODEL=testyCodegena_mex -c  testyCodegena_initialize.c -o build/maca64/testyCodegena_initialize.o",
+    "file": "testyCodegena_initialize.c",
+    "output": "build/maca64/testyCodegena_initialize.o"
+  },
+  {
+    "directory": "/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test/codegen/mex/testyCodegena",
+    "command": "/usr/bin/xcrun -sdk macosx11.3 clang -fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -DMATLAB_MEX_FILE -O2 -DNDEBUG -std=c99 -I \".\" -I \"/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test\" -I \"/Applications/MATLAB_R2024a.app/extern/include\" -I \"/Applications/MATLAB_R2024a.app/extern/include/vslamcore\" -I \"./interface\" -I \".\" -DMODEL=testyCodegena_mex -c  testyCodegena_terminate.c -o build/maca64/testyCodegena_terminate.o",
+    "file": "testyCodegena_terminate.c",
+    "output": "build/maca64/testyCodegena_terminate.o"
+  },
+  {
+    "directory": "/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test/codegen/mex/testyCodegena",
+    "command": "/usr/bin/xcrun -sdk macosx11.3 clang -fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -DMATLAB_MEX_FILE -O2 -DNDEBUG -std=c99 -I \".\" -I \"/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test\" -I \"/Applications/MATLAB_R2024a.app/extern/include\" -I \"/Applications/MATLAB_R2024a.app/extern/include/vslamcore\" -I \"./interface\" -I \".\" -DMODEL=testyCodegena_mex -c  testyCodegena.c -o build/maca64/testyCodegena.o",
+    "file": "testyCodegena.c",
+    "output": "build/maca64/testyCodegena.o"
+  },
+  {
+    "directory": "/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test/codegen/mex/testyCodegena",
+    "command": "/usr/bin/xcrun -sdk macosx11.3 clang -fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -DMATLAB_MEX_FILE -O2 -DNDEBUG -std=c99 -I \".\" -I \"/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test\" -I \"/Applications/MATLAB_R2024a.app/extern/include\" -I \"/Applications/MATLAB_R2024a.app/extern/include/vslamcore\" -I \"./interface\" -I \".\" -DMODEL=testyCodegena_mex -c  cameraIntrinsics.c -o build/maca64/cameraIntrinsics.o",
+    "file": "cameraIntrinsics.c",
+    "output": "build/maca64/cameraIntrinsics.o"
+  },
+  {
+    "directory": "/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test/codegen/mex/testyCodegena",
+    "command": "/usr/bin/xcrun -sdk macosx11.3 clang -fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -DMATLAB_MEX_FILE -O2 -DNDEBUG -std=c99 -I \".\" -I \"/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test\" -I \"/Applications/MATLAB_R2024a.app/extern/include\" -I \"/Applications/MATLAB_R2024a.app/extern/include/vslamcore\" -I \"./interface\" -I \".\" -DMODEL=testyCodegena_mex -c  CameraParametersImpl.c -o build/maca64/CameraParametersImpl.o",
+    "file": "CameraParametersImpl.c",
+    "output": "build/maca64/CameraParametersImpl.o"
+  },
+  {
+    "directory": "/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test/codegen/mex/testyCodegena",
+    "command": "/usr/bin/xcrun -sdk macosx11.3 clang -fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -DMATLAB_MEX_FILE -O2 -DNDEBUG -std=c99 -I \".\" -I \"/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test\" -I \"/Applications/MATLAB_R2024a.app/extern/include\" -I \"/Applications/MATLAB_R2024a.app/extern/include/vslamcore\" -I \"./interface\" -I \".\" -DMODEL=testyCodegena_mex -c  rigidtform3d.c -o build/maca64/rigidtform3d.o",
+    "file": "rigidtform3d.c",
+    "output": "build/maca64/rigidtform3d.o"
+  },
+  {
+    "directory": "/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test/codegen/mex/testyCodegena",
+    "command": "/usr/bin/xcrun -sdk macosx11.3 clang -fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -DMATLAB_MEX_FILE -O2 -DNDEBUG -std=c99 -I \".\" -I \"/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test\" -I \"/Applications/MATLAB_R2024a.app/extern/include\" -I \"/Applications/MATLAB_R2024a.app/extern/include/vslamcore\" -I \"./interface\" -I \".\" -DMODEL=testyCodegena_mex -c  constrainToRotationMatrix3D.c -o build/maca64/constrainToRotationMatrix3D.o",
+    "file": "constrainToRotationMatrix3D.c",
+    "output": "build/maca64/constrainToRotationMatrix3D.o"
+  },
+  {
+    "directory": "/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test/codegen/mex/testyCodegena",
+    "command": "/usr/bin/xcrun -sdk macosx11.3 clang -fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -DMATLAB_MEX_FILE -O2 -DNDEBUG -std=c99 -I \".\" -I \"/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test\" -I \"/Applications/MATLAB_R2024a.app/extern/include\" -I \"/Applications/MATLAB_R2024a.app/extern/include/vslamcore\" -I \"./interface\" -I \".\" -DMODEL=testyCodegena_mex -c  xzsvdc.c -o build/maca64/xzsvdc.o",
+    "file": "xzsvdc.c",
+    "output": "build/maca64/xzsvdc.o"
+  },
+  {
+    "directory": "/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test/codegen/mex/testyCodegena",
+    "command": "/usr/bin/xcrun -sdk macosx11.3 clang -fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -DMATLAB_MEX_FILE -O2 -DNDEBUG -std=c99 -I \".\" -I \"/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test\" -I \"/Applications/MATLAB_R2024a.app/extern/include\" -I \"/Applications/MATLAB_R2024a.app/extern/include/vslamcore\" -I \"./interface\" -I \".\" -DMODEL=testyCodegena_mex -c  xzlangeM.c -o build/maca64/xzlangeM.o",
+    "file": "xzlangeM.c",
+    "output": "build/maca64/xzlangeM.o"
+  },
+  {
+    "directory": "/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test/codegen/mex/testyCodegena",
+    "command": "/usr/bin/xcrun -sdk macosx11.3 clang -fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -DMATLAB_MEX_FILE -O2 -DNDEBUG -std=c99 -I \".\" -I \"/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test\" -I \"/Applications/MATLAB_R2024a.app/extern/include\" -I \"/Applications/MATLAB_R2024a.app/extern/include/vslamcore\" -I \"./interface\" -I \".\" -DMODEL=testyCodegena_mex -c  xnrm2.c -o build/maca64/xnrm2.o",
+    "file": "xnrm2.c",
+    "output": "build/maca64/xnrm2.o"
+  },
+  {
+    "directory": "/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test/codegen/mex/testyCodegena",
+    "command": "/usr/bin/xcrun -sdk macosx11.3 clang -fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -DMATLAB_MEX_FILE -O2 -DNDEBUG -std=c99 -I \".\" -I \"/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test\" -I \"/Applications/MATLAB_R2024a.app/extern/include\" -I \"/Applications/MATLAB_R2024a.app/extern/include/vslamcore\" -I \"./interface\" -I \".\" -DMODEL=testyCodegena_mex -c  xdotc.c -o build/maca64/xdotc.o",
+    "file": "xdotc.c",
+    "output": "build/maca64/xdotc.o"
+  },
+  {
+    "directory": "/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test/codegen/mex/testyCodegena",
+    "command": "/usr/bin/xcrun -sdk macosx11.3 clang -fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -DMATLAB_MEX_FILE -O2 -DNDEBUG -std=c99 -I \".\" -I \"/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test\" -I \"/Applications/MATLAB_R2024a.app/extern/include\" -I \"/Applications/MATLAB_R2024a.app/extern/include/vslamcore\" -I \"./interface\" -I \".\" -DMODEL=testyCodegena_mex -c  norm.c -o build/maca64/norm.o",
+    "file": "norm.c",
+    "output": "build/maca64/norm.o"
+  },
+  {
+    "directory": "/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test/codegen/mex/testyCodegena",
+    "command": "/usr/bin/xcrun -sdk macosx11.3 clang -fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -DMATLAB_MEX_FILE -O2 -DNDEBUG -std=c99 -I \".\" -I \"/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test\" -I \"/Applications/MATLAB_R2024a.app/extern/include\" -I \"/Applications/MATLAB_R2024a.app/extern/include/vslamcore\" -I \"./interface\" -I \".\" -DMODEL=testyCodegena_mex -c  OneDimArrayBehaviorTransform.c -o build/maca64/OneDimArrayBehaviorTransform.o",
+    "file": "OneDimArrayBehaviorTransform.c",
+    "output": "build/maca64/OneDimArrayBehaviorTransform.o"
+  },
+  {
+    "directory": "/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test/codegen/mex/testyCodegena",
+    "command": "/usr/bin/xcrun -sdk macosx11.3 clang -fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -DMATLAB_MEX_FILE -O2 -DNDEBUG -std=c99 -I \".\" -I \"/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test\" -I \"/Applications/MATLAB_R2024a.app/extern/include\" -I \"/Applications/MATLAB_R2024a.app/extern/include/vslamcore\" -I \"./interface\" -I \".\" -DMODEL=testyCodegena_mex -c  checkTransformationMatrixCondition.c -o build/maca64/checkTransformationMatrixCondition.o",
+    "file": "checkTransformationMatrixCondition.c",
+    "output": "build/maca64/checkTransformationMatrixCondition.o"
+  },
+  {
+    "directory": "/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test/codegen/mex/testyCodegena",
+    "command": "/usr/bin/xcrun -sdk macosx11.3 clang -fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -DMATLAB_MEX_FILE -O2 -DNDEBUG -std=c99 -I \".\" -I \"/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test\" -I \"/Applications/MATLAB_R2024a.app/extern/include\" -I \"/Applications/MATLAB_R2024a.app/extern/include/vslamcore\" -I \"./interface\" -I \".\" -DMODEL=testyCodegena_mex -c  warning.c -o build/maca64/warning.o",
+    "file": "warning.c",
+    "output": "build/maca64/warning.o"
+  },
+  {
+    "directory": "/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test/codegen/mex/testyCodegena",
+    "command": "/usr/bin/xcrun -sdk macosx11.3 clang -fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -DMATLAB_MEX_FILE -O2 -DNDEBUG -std=c99 -I \".\" -I \"/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test\" -I \"/Applications/MATLAB_R2024a.app/extern/include\" -I \"/Applications/MATLAB_R2024a.app/extern/include/vslamcore\" -I \"./interface\" -I \".\" -DMODEL=testyCodegena_mex -c  interface/_coder_testyCodegena_api.c -o build/maca64/_coder_testyCodegena_api.o",
+    "file": "interface/_coder_testyCodegena_api.c",
+    "output": "build/maca64/_coder_testyCodegena_api.o"
+  },
+  {
+    "directory": "/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test/codegen/mex/testyCodegena",
+    "command": "/usr/bin/xcrun -sdk macosx11.3 clang -fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -DMATLAB_MEX_FILE -O2 -DNDEBUG -std=c99 -I \".\" -I \"/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test\" -I \"/Applications/MATLAB_R2024a.app/extern/include\" -I \"/Applications/MATLAB_R2024a.app/extern/include/vslamcore\" -I \"./interface\" -I \".\" -DMODEL=testyCodegena_mex -c  interface/_coder_testyCodegena_mex.c -o build/maca64/_coder_testyCodegena_mex.o",
+    "file": "interface/_coder_testyCodegena_mex.c",
+    "output": "build/maca64/_coder_testyCodegena_mex.o"
+  },
+  {
+    "directory": "/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test/codegen/mex/testyCodegena",
+    "command": "/usr/bin/xcrun -sdk macosx11.3 clang -fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -DMATLAB_MEX_FILE -O2 -DNDEBUG -std=c99 -I \".\" -I \"/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test\" -I \"/Applications/MATLAB_R2024a.app/extern/include\" -I \"/Applications/MATLAB_R2024a.app/extern/include/vslamcore\" -I \"./interface\" -I \".\" -DMODEL=testyCodegena_mex -c  eml_int_forloop_overflow_check.c -o build/maca64/eml_int_forloop_overflow_check.o",
+    "file": "eml_int_forloop_overflow_check.c",
+    "output": "build/maca64/eml_int_forloop_overflow_check.o"
+  },
+  {
+    "directory": "/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test/codegen/mex/testyCodegena",
+    "command": "/usr/bin/xcrun -sdk macosx11.3 clang -fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -DMATLAB_MEX_FILE -O2 -DNDEBUG -std=c99 -I \".\" -I \"/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test\" -I \"/Applications/MATLAB_R2024a.app/extern/include\" -I \"/Applications/MATLAB_R2024a.app/extern/include/vslamcore\" -I \"./interface\" -I \".\" -DMODEL=testyCodegena_mex -c  xscal.c -o build/maca64/xscal.o",
+    "file": "xscal.c",
+    "output": "build/maca64/xscal.o"
+  },
+  {
+    "directory": "/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test/codegen/mex/testyCodegena",
+    "command": "/usr/bin/xcrun -sdk macosx11.3 clang -fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -DMATLAB_MEX_FILE -O2 -DNDEBUG -std=c99 -I \".\" -I \"/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test\" -I \"/Applications/MATLAB_R2024a.app/extern/include\" -I \"/Applications/MATLAB_R2024a.app/extern/include/vslamcore\" -I \"./interface\" -I \".\" -DMODEL=testyCodegena_mex -c  xaxpy.c -o build/maca64/xaxpy.o",
+    "file": "xaxpy.c",
+    "output": "build/maca64/xaxpy.o"
+  },
+  {
+    "directory": "/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test/codegen/mex/testyCodegena",
+    "command": "/usr/bin/xcrun -sdk macosx11.3 clang -fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -DMATLAB_MEX_FILE -O2 -DNDEBUG -std=c99 -I \".\" -I \"/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test\" -I \"/Applications/MATLAB_R2024a.app/extern/include\" -I \"/Applications/MATLAB_R2024a.app/extern/include/vslamcore\" -I \"./interface\" -I \".\" -DMODEL=testyCodegena_mex -c  xrot.c -o build/maca64/xrot.o",
+    "file": "xrot.c",
+    "output": "build/maca64/xrot.o"
+  },
+  {
+    "directory": "/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test/codegen/mex/testyCodegena",
+    "command": "/usr/bin/xcrun -sdk macosx11.3 clang -fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -DMATLAB_MEX_FILE -O2 -DNDEBUG -std=c99 -I \".\" -I \"/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test\" -I \"/Applications/MATLAB_R2024a.app/extern/include\" -I \"/Applications/MATLAB_R2024a.app/extern/include/vslamcore\" -I \"./interface\" -I \".\" -DMODEL=testyCodegena_mex -c  xswap.c -o build/maca64/xswap.o",
+    "file": "xswap.c",
+    "output": "build/maca64/xswap.o"
+  },
+  {
+    "directory": "/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test/codegen/mex/testyCodegena",
+    "command": "/usr/bin/xcrun -sdk macosx11.3 clang -fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -DMATLAB_MEX_FILE -O2 -DNDEBUG -std=c99 -I \".\" -I \"/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test\" -I \"/Applications/MATLAB_R2024a.app/extern/include\" -I \"/Applications/MATLAB_R2024a.app/extern/include/vslamcore\" -I \"./interface\" -I \".\" -DMODEL=testyCodegena_mex -c  xzlascl.c -o build/maca64/xzlascl.o",
+    "file": "xzlascl.c",
+    "output": "build/maca64/xzlascl.o"
+  },
+  {
+    "directory": "/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test/codegen/mex/testyCodegena",
+    "command": "/usr/bin/xcrun -sdk macosx11.3 clang -fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -DMATLAB_MEX_FILE -O2 -DNDEBUG -std=c99 -I \".\" -I \"/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test\" -I \"/Applications/MATLAB_R2024a.app/extern/include\" -I \"/Applications/MATLAB_R2024a.app/extern/include/vslamcore\" -I \"./interface\" -I \".\" -DMODEL=testyCodegena_mex -c  xzgetrf.c -o build/maca64/xzgetrf.o",
+    "file": "xzgetrf.c",
+    "output": "build/maca64/xzgetrf.o"
+  },
+  {
+    "directory": "/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test/codegen/mex/testyCodegena",
+    "command": "/usr/bin/xcrun -sdk macosx11.3 clang -fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -DMATLAB_MEX_FILE -O2 -DNDEBUG -std=c99 -I \".\" -I \"/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test\" -I \"/Applications/MATLAB_R2024a.app/extern/include\" -I \"/Applications/MATLAB_R2024a.app/extern/include/vslamcore\" -I \"./interface\" -I \".\" -DMODEL=testyCodegena_mex -c  testyCodegena_emxutil.c -o build/maca64/testyCodegena_emxutil.o",
+    "file": "testyCodegena_emxutil.c",
+    "output": "build/maca64/testyCodegena_emxutil.o"
+  },
+  {
+    "directory": "/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test/codegen/mex/testyCodegena",
+    "command": "/usr/bin/xcrun -sdk macosx11.3 clang -fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -DMATLAB_MEX_FILE -O2 -DNDEBUG -std=c99 -I \".\" -I \"/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test\" -I \"/Applications/MATLAB_R2024a.app/extern/include\" -I \"/Applications/MATLAB_R2024a.app/extern/include/vslamcore\" -I \"./interface\" -I \".\" -DMODEL=testyCodegena_mex -c  interface/_coder_testyCodegena_info.c -o build/maca64/_coder_testyCodegena_info.o",
+    "file": "interface/_coder_testyCodegena_info.c",
+    "output": "build/maca64/_coder_testyCodegena_info.o"
+  },
+  {
+    "directory": "/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test/codegen/mex/testyCodegena",
+    "command": "/usr/bin/xcrun -sdk macosx11.3 clang -fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -DMATLAB_MEX_FILE -O2 -DNDEBUG -std=c99 -I \".\" -I \"/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test\" -I \"/Applications/MATLAB_R2024a.app/extern/include\" -I \"/Applications/MATLAB_R2024a.app/extern/include/vslamcore\" -I \"./interface\" -I \".\" -DMODEL=testyCodegena_mex -c  /Applications/MATLAB_R2024a.app/extern/version/c_mexapi_version.c -o build/maca64/c_mexapi_version.o",
+    "file": "/Applications/MATLAB_R2024a.app/extern/version/c_mexapi_version.c",
+    "output": "build/maca64/c_mexapi_version.o"
+  }
+]
