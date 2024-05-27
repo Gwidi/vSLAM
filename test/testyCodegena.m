@@ -9,16 +9,16 @@ function [xyzPoint, camPoses] = testyCodegena(image)
     if isempty(vslam)
         % %% kalibracja kamery 
         % % kuba
-        principalPoint=[644.5,355.6];
-        focalLength=[983.4,989.3];
+        % principalPoint=[644.5,355.6];
+        % focalLength=[983.4,989.3];
 
         % gwidon 
-        % principalPoint=[651.7301,433.2670];
-        % focalLength=[951.6815,955.0682];
+        principalPoint=[651.7301,433.2670];
+        focalLength=[951.6815,955.0682];
 
         imageSize=[720,1280];
         intrinsics     = cameraIntrinsics(focalLength, principalPoint, imageSize);
-        numPoints   = 2000;
+        numPoints   = 2000; 
         numSkipFrames = 20;
         numLevels = 8;
         scaleFactor = 1.4;
