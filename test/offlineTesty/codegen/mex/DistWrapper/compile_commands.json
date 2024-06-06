@@ -1,0 +1,116 @@
+[
+  {
+    "directory": "/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test/offlineTesty/codegen/mex/DistWrapper",
+    "command": "/usr/bin/xcrun -sdk macosx11.3 clang++ -fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -fobjc-arc -std=c++14 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test/offlineTesty\" -I \"/Applications/MATLAB_R2024a.app/extern/include\" -I \"./interface\" -I \".\" -DMODEL=DistWrapper_mex3 -DMW_NEEDS_VERSION_H -c -fPIC -Xpreprocessor -fopenmp -I \"/Applications/MATLAB_R2024a.app/toolbox/eml/externalDependency/omp/maca64/include\" -DOpenMP_omp_LIBRARY=\"/Applications/MATLAB_R2024a.app/sys/os/maca64/libiomp5.dylib\"  DistWrapper_data.cpp -o build/maca64/DistWrapper_data.o",
+    "file": "DistWrapper_data.cpp",
+    "output": "build/maca64/DistWrapper_data.o"
+  },
+  {
+    "directory": "/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test/offlineTesty/codegen/mex/DistWrapper",
+    "command": "/usr/bin/xcrun -sdk macosx11.3 clang++ -fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -fobjc-arc -std=c++14 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test/offlineTesty\" -I \"/Applications/MATLAB_R2024a.app/extern/include\" -I \"./interface\" -I \".\" -DMODEL=DistWrapper_mex3 -DMW_NEEDS_VERSION_H -c -fPIC -Xpreprocessor -fopenmp -I \"/Applications/MATLAB_R2024a.app/toolbox/eml/externalDependency/omp/maca64/include\" -DOpenMP_omp_LIBRARY=\"/Applications/MATLAB_R2024a.app/sys/os/maca64/libiomp5.dylib\"  rt_nonfinite.cpp -o build/maca64/rt_nonfinite.o",
+    "file": "rt_nonfinite.cpp",
+    "output": "build/maca64/rt_nonfinite.o"
+  },
+  {
+    "directory": "/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test/offlineTesty/codegen/mex/DistWrapper",
+    "command": "/usr/bin/xcrun -sdk macosx11.3 clang++ -fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -fobjc-arc -std=c++14 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test/offlineTesty\" -I \"/Applications/MATLAB_R2024a.app/extern/include\" -I \"./interface\" -I \".\" -DMODEL=DistWrapper_mex3 -DMW_NEEDS_VERSION_H -c -fPIC -Xpreprocessor -fopenmp -I \"/Applications/MATLAB_R2024a.app/toolbox/eml/externalDependency/omp/maca64/include\" -DOpenMP_omp_LIBRARY=\"/Applications/MATLAB_R2024a.app/sys/os/maca64/libiomp5.dylib\"  DistWrapper_initialize.cpp -o build/maca64/DistWrapper_initialize.o",
+    "file": "DistWrapper_initialize.cpp",
+    "output": "build/maca64/DistWrapper_initialize.o"
+  },
+  {
+    "directory": "/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test/offlineTesty/codegen/mex/DistWrapper",
+    "command": "/usr/bin/xcrun -sdk macosx11.3 clang++ -fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -fobjc-arc -std=c++14 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test/offlineTesty\" -I \"/Applications/MATLAB_R2024a.app/extern/include\" -I \"./interface\" -I \".\" -DMODEL=DistWrapper_mex3 -DMW_NEEDS_VERSION_H -c -fPIC -Xpreprocessor -fopenmp -I \"/Applications/MATLAB_R2024a.app/toolbox/eml/externalDependency/omp/maca64/include\" -DOpenMP_omp_LIBRARY=\"/Applications/MATLAB_R2024a.app/sys/os/maca64/libiomp5.dylib\"  DistWrapper_terminate.cpp -o build/maca64/DistWrapper_terminate.o",
+    "file": "DistWrapper_terminate.cpp",
+    "output": "build/maca64/DistWrapper_terminate.o"
+  },
+  {
+    "directory": "/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test/offlineTesty/codegen/mex/DistWrapper",
+    "command": "/usr/bin/xcrun -sdk macosx11.3 clang++ -fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -fobjc-arc -std=c++14 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test/offlineTesty\" -I \"/Applications/MATLAB_R2024a.app/extern/include\" -I \"./interface\" -I \".\" -DMODEL=DistWrapper_mex3 -DMW_NEEDS_VERSION_H -c -fPIC -Xpreprocessor -fopenmp -I \"/Applications/MATLAB_R2024a.app/toolbox/eml/externalDependency/omp/maca64/include\" -DOpenMP_omp_LIBRARY=\"/Applications/MATLAB_R2024a.app/sys/os/maca64/libiomp5.dylib\"  DistWrapper.cpp -o build/maca64/DistWrapper.o",
+    "file": "DistWrapper.cpp",
+    "output": "build/maca64/DistWrapper.o"
+  },
+  {
+    "directory": "/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test/offlineTesty/codegen/mex/DistWrapper",
+    "command": "/usr/bin/xcrun -sdk macosx11.3 clang++ -fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -fobjc-arc -std=c++14 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test/offlineTesty\" -I \"/Applications/MATLAB_R2024a.app/extern/include\" -I \"./interface\" -I \".\" -DMODEL=DistWrapper_mex3 -DMW_NEEDS_VERSION_H -c -fPIC -Xpreprocessor -fopenmp -I \"/Applications/MATLAB_R2024a.app/toolbox/eml/externalDependency/omp/maca64/include\" -DOpenMP_omp_LIBRARY=\"/Applications/MATLAB_R2024a.app/sys/os/maca64/libiomp5.dylib\"  validateattributes.cpp -o build/maca64/validateattributes.o",
+    "file": "validateattributes.cpp",
+    "output": "build/maca64/validateattributes.o"
+  },
+  {
+    "directory": "/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test/offlineTesty/codegen/mex/DistWrapper",
+    "command": "/usr/bin/xcrun -sdk macosx11.3 clang++ -fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -fobjc-arc -std=c++14 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test/offlineTesty\" -I \"/Applications/MATLAB_R2024a.app/extern/include\" -I \"./interface\" -I \".\" -DMODEL=DistWrapper_mex3 -DMW_NEEDS_VERSION_H -c -fPIC -Xpreprocessor -fopenmp -I \"/Applications/MATLAB_R2024a.app/toolbox/eml/externalDependency/omp/maca64/include\" -DOpenMP_omp_LIBRARY=\"/Applications/MATLAB_R2024a.app/sys/os/maca64/libiomp5.dylib\"  undistortImage.cpp -o build/maca64/undistortImage.o",
+    "file": "undistortImage.cpp",
+    "output": "build/maca64/undistortImage.o"
+  },
+  {
+    "directory": "/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test/offlineTesty/codegen/mex/DistWrapper",
+    "command": "/usr/bin/xcrun -sdk macosx11.3 clang++ -fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -fobjc-arc -std=c++14 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test/offlineTesty\" -I \"/Applications/MATLAB_R2024a.app/extern/include\" -I \"./interface\" -I \".\" -DMODEL=DistWrapper_mex3 -DMW_NEEDS_VERSION_H -c -fPIC -Xpreprocessor -fopenmp -I \"/Applications/MATLAB_R2024a.app/toolbox/eml/externalDependency/omp/maca64/include\" -DOpenMP_omp_LIBRARY=\"/Applications/MATLAB_R2024a.app/sys/os/maca64/libiomp5.dylib\"  colon.cpp -o build/maca64/colon.o",
+    "file": "colon.cpp",
+    "output": "build/maca64/colon.o"
+  },
+  {
+    "directory": "/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test/offlineTesty/codegen/mex/DistWrapper",
+    "command": "/usr/bin/xcrun -sdk macosx11.3 clang++ -fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -fobjc-arc -std=c++14 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test/offlineTesty\" -I \"/Applications/MATLAB_R2024a.app/extern/include\" -I \"./interface\" -I \".\" -DMODEL=DistWrapper_mex3 -DMW_NEEDS_VERSION_H -c -fPIC -Xpreprocessor -fopenmp -I \"/Applications/MATLAB_R2024a.app/toolbox/eml/externalDependency/omp/maca64/include\" -DOpenMP_omp_LIBRARY=\"/Applications/MATLAB_R2024a.app/sys/os/maca64/libiomp5.dylib\"  distortPoints.cpp -o build/maca64/distortPoints.o",
+    "file": "distortPoints.cpp",
+    "output": "build/maca64/distortPoints.o"
+  },
+  {
+    "directory": "/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test/offlineTesty/codegen/mex/DistWrapper",
+    "command": "/usr/bin/xcrun -sdk macosx11.3 clang++ -fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -fobjc-arc -std=c++14 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test/offlineTesty\" -I \"/Applications/MATLAB_R2024a.app/extern/include\" -I \"./interface\" -I \".\" -DMODEL=DistWrapper_mex3 -DMW_NEEDS_VERSION_H -c -fPIC -Xpreprocessor -fopenmp -I \"/Applications/MATLAB_R2024a.app/toolbox/eml/externalDependency/omp/maca64/include\" -DOpenMP_omp_LIBRARY=\"/Applications/MATLAB_R2024a.app/sys/os/maca64/libiomp5.dylib\"  assertValidSizeArg.cpp -o build/maca64/assertValidSizeArg.o",
+    "file": "assertValidSizeArg.cpp",
+    "output": "build/maca64/assertValidSizeArg.o"
+  },
+  {
+    "directory": "/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test/offlineTesty/codegen/mex/DistWrapper",
+    "command": "/usr/bin/xcrun -sdk macosx11.3 clang++ -fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -fobjc-arc -std=c++14 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test/offlineTesty\" -I \"/Applications/MATLAB_R2024a.app/extern/include\" -I \"./interface\" -I \".\" -DMODEL=DistWrapper_mex3 -DMW_NEEDS_VERSION_H -c -fPIC -Xpreprocessor -fopenmp -I \"/Applications/MATLAB_R2024a.app/toolbox/eml/externalDependency/omp/maca64/include\" -DOpenMP_omp_LIBRARY=\"/Applications/MATLAB_R2024a.app/sys/os/maca64/libiomp5.dylib\"  interface/_coder_DistWrapper_api.cpp -o build/maca64/_coder_DistWrapper_api.o",
+    "file": "interface/_coder_DistWrapper_api.cpp",
+    "output": "build/maca64/_coder_DistWrapper_api.o"
+  },
+  {
+    "directory": "/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test/offlineTesty/codegen/mex/DistWrapper",
+    "command": "/usr/bin/xcrun -sdk macosx11.3 clang++ -fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -fobjc-arc -std=c++14 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test/offlineTesty\" -I \"/Applications/MATLAB_R2024a.app/extern/include\" -I \"./interface\" -I \".\" -DMODEL=DistWrapper_mex3 -DMW_NEEDS_VERSION_H -c -fPIC -Xpreprocessor -fopenmp -I \"/Applications/MATLAB_R2024a.app/toolbox/eml/externalDependency/omp/maca64/include\" -DOpenMP_omp_LIBRARY=\"/Applications/MATLAB_R2024a.app/sys/os/maca64/libiomp5.dylib\"  interface/_coder_DistWrapper_mex.cpp -o build/maca64/_coder_DistWrapper_mex.o",
+    "file": "interface/_coder_DistWrapper_mex.cpp",
+    "output": "build/maca64/_coder_DistWrapper_mex.o"
+  },
+  {
+    "directory": "/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test/offlineTesty/codegen/mex/DistWrapper",
+    "command": "/usr/bin/xcrun -sdk macosx11.3 clang++ -fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -fobjc-arc -std=c++14 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test/offlineTesty\" -I \"/Applications/MATLAB_R2024a.app/extern/include\" -I \"./interface\" -I \".\" -DMODEL=DistWrapper_mex3 -DMW_NEEDS_VERSION_H -c -fPIC -Xpreprocessor -fopenmp -I \"/Applications/MATLAB_R2024a.app/toolbox/eml/externalDependency/omp/maca64/include\" -DOpenMP_omp_LIBRARY=\"/Applications/MATLAB_R2024a.app/sys/os/maca64/libiomp5.dylib\"  eml_int_forloop_overflow_check.cpp -o build/maca64/eml_int_forloop_overflow_check.o",
+    "file": "eml_int_forloop_overflow_check.cpp",
+    "output": "build/maca64/eml_int_forloop_overflow_check.o"
+  },
+  {
+    "directory": "/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test/offlineTesty/codegen/mex/DistWrapper",
+    "command": "/usr/bin/xcrun -sdk macosx11.3 clang++ -fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -fobjc-arc -std=c++14 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test/offlineTesty\" -I \"/Applications/MATLAB_R2024a.app/extern/include\" -I \"./interface\" -I \".\" -DMODEL=DistWrapper_mex3 -DMW_NEEDS_VERSION_H -c -fPIC -Xpreprocessor -fopenmp -I \"/Applications/MATLAB_R2024a.app/toolbox/eml/externalDependency/omp/maca64/include\" -DOpenMP_omp_LIBRARY=\"/Applications/MATLAB_R2024a.app/sys/os/maca64/libiomp5.dylib\"  eml_mtimes_helper.cpp -o build/maca64/eml_mtimes_helper.o",
+    "file": "eml_mtimes_helper.cpp",
+    "output": "build/maca64/eml_mtimes_helper.o"
+  },
+  {
+    "directory": "/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test/offlineTesty/codegen/mex/DistWrapper",
+    "command": "/usr/bin/xcrun -sdk macosx11.3 clang++ -fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -fobjc-arc -std=c++14 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test/offlineTesty\" -I \"/Applications/MATLAB_R2024a.app/extern/include\" -I \"./interface\" -I \".\" -DMODEL=DistWrapper_mex3 -DMW_NEEDS_VERSION_H -c -fPIC -Xpreprocessor -fopenmp -I \"/Applications/MATLAB_R2024a.app/toolbox/eml/externalDependency/omp/maca64/include\" -DOpenMP_omp_LIBRARY=\"/Applications/MATLAB_R2024a.app/sys/os/maca64/libiomp5.dylib\"  ImageTransformer.cpp -o build/maca64/ImageTransformer.o",
+    "file": "ImageTransformer.cpp",
+    "output": "build/maca64/ImageTransformer.o"
+  },
+  {
+    "directory": "/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test/offlineTesty/codegen/mex/DistWrapper",
+    "command": "/usr/bin/xcrun -sdk macosx11.3 clang++ -fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -fobjc-arc -std=c++14 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test/offlineTesty\" -I \"/Applications/MATLAB_R2024a.app/extern/include\" -I \"./interface\" -I \".\" -DMODEL=DistWrapper_mex3 -DMW_NEEDS_VERSION_H -c -fPIC -Xpreprocessor -fopenmp -I \"/Applications/MATLAB_R2024a.app/toolbox/eml/externalDependency/omp/maca64/include\" -DOpenMP_omp_LIBRARY=\"/Applications/MATLAB_R2024a.app/sys/os/maca64/libiomp5.dylib\"  cameraParameters.cpp -o build/maca64/cameraParameters.o",
+    "file": "cameraParameters.cpp",
+    "output": "build/maca64/cameraParameters.o"
+  },
+  {
+    "directory": "/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test/offlineTesty/codegen/mex/DistWrapper",
+    "command": "/usr/bin/xcrun -sdk macosx11.3 clang++ -fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -fobjc-arc -std=c++14 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test/offlineTesty\" -I \"/Applications/MATLAB_R2024a.app/extern/include\" -I \"./interface\" -I \".\" -DMODEL=DistWrapper_mex3 -DMW_NEEDS_VERSION_H -c -fPIC -Xpreprocessor -fopenmp -I \"/Applications/MATLAB_R2024a.app/toolbox/eml/externalDependency/omp/maca64/include\" -DOpenMP_omp_LIBRARY=\"/Applications/MATLAB_R2024a.app/sys/os/maca64/libiomp5.dylib\"  CameraParametersImpl.cpp -o build/maca64/CameraParametersImpl.o",
+    "file": "CameraParametersImpl.cpp",
+    "output": "build/maca64/CameraParametersImpl.o"
+  },
+  {
+    "directory": "/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test/offlineTesty/codegen/mex/DistWrapper",
+    "command": "/usr/bin/xcrun -sdk macosx11.3 clang++ -fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -fobjc-arc -std=c++14 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test/offlineTesty\" -I \"/Applications/MATLAB_R2024a.app/extern/include\" -I \"./interface\" -I \".\" -DMODEL=DistWrapper_mex3 -DMW_NEEDS_VERSION_H -c -fPIC -Xpreprocessor -fopenmp -I \"/Applications/MATLAB_R2024a.app/toolbox/eml/externalDependency/omp/maca64/include\" -DOpenMP_omp_LIBRARY=\"/Applications/MATLAB_R2024a.app/sys/os/maca64/libiomp5.dylib\"  interface/_coder_DistWrapper_info.cpp -o build/maca64/_coder_DistWrapper_info.o",
+    "file": "interface/_coder_DistWrapper_info.cpp",
+    "output": "build/maca64/_coder_DistWrapper_info.o"
+  },
+  {
+    "directory": "/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test/offlineTesty/codegen/mex/DistWrapper",
+    "command": "/usr/bin/xcrun -sdk macosx11.3 clang++ -fno-common -arch arm64 -mmacosx-version-min=11.0 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fwrapv -ffp-contract=off  -fobjc-arc -std=c++14 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/busiu/Desktop/Uczelnia/Projekt przejściowy/vSLAM/test/offlineTesty\" -I \"/Applications/MATLAB_R2024a.app/extern/include\" -I \"./interface\" -I \".\" -DMODEL=DistWrapper_mex3 -DMW_NEEDS_VERSION_H -c -fPIC -Xpreprocessor -fopenmp -I \"/Applications/MATLAB_R2024a.app/toolbox/eml/externalDependency/omp/maca64/include\" -DOpenMP_omp_LIBRARY=\"/Applications/MATLAB_R2024a.app/sys/os/maca64/libiomp5.dylib\"  /Applications/MATLAB_R2024a.app/extern/version/cpp_mexapi_version.cpp -o build/maca64/cpp_mexapi_version.o",
+    "file": "/Applications/MATLAB_R2024a.app/extern/version/cpp_mexapi_version.cpp",
+    "output": "build/maca64/cpp_mexapi_version.o"
+  }
+]

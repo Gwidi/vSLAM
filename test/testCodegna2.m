@@ -51,8 +51,8 @@ keyImage = figure('Name',"Last keyFrame from camera",'NumberTitle','off','KeyPre
 %zgubiony 
 isStop = false;
 isLost = false;
-keyFrameCount = 0;
-mkdir('img');
+camPose = eye(4);
+xyzPoints = [];
 %% petla główna 
 while ~isStop
     
@@ -67,7 +67,11 @@ while ~isStop
     colormap('gray');
     hold off;
     
-    [xyzPoints, camPoses] = testyCodegena_mex(I);
+    [xyzPoints, camPose] = testyCodegena_mex(I);
+    % Convert camPoses to trajectory for display
+    camPoses = rigidtform3d(camPose(1:3,1:3),camPose(4,1:3));
+    % viewer = helperVisualSLAMViewer(xyzPoints,camPoses);
+    % viewer.updatePlot(xyzPoints, camPoses);
     
 end
 clear cam;
