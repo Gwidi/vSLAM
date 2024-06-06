@@ -1,7 +1,7 @@
 % Inicjalizacja węzła ROS 2
 node = ros2node('/vSlam');
 topicName = "macierz_trans";
-messageType = "sensor_msgs/";
+messageType = "sensor_msgs/PointCloud";
 pub = ros2publisher(node, topicName, messageType);
 
 topicName2 = "xyz_data1";
