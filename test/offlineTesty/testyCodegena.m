@@ -1,4 +1,4 @@
-function [xyzPoint, camPoses, status, siema] = testyCodegena(image,imageSize, ...
+function [xyzPoint, camPoses, status, MapInit] = testyCodegena(image,imageSize, ...
     principalPoint,focalLength,radialDistortion,numPoints,numSkipFrames,numLevels, ...
     scaleFactor, verbose,trackFeatureRange,loopClosureThreshold, isReturnAll)
 
@@ -40,7 +40,7 @@ function [xyzPoint, camPoses, status, siema] = testyCodegena(image,imageSize, ..
         if numPoses > 0
             camPoses  = camPosesInternal(end).A;
         else
-            camPosesInternal = [rigidtform3d(eye(4));rigidtform3d(eye(4))];
+            camPosesInternal = [rigidtform3d(eye(4))];
             camPoses = eye(4);
         end
     else
@@ -50,8 +50,11 @@ function [xyzPoint, camPoses, status, siema] = testyCodegena(image,imageSize, ..
                 camPoses(k*4-3:k*4,1:4) = camPosesInternal(k).A;
             end
         else
-            camPosesInternal = [rigidtform3d(eye(4));rigidtform3d(eye(4))];
+            camPosesInternal = [rigidtform3d(eye(4))];
             camPoses = eye(4);
         end
     end
-    siema = isMapInitialized(vslam);
+   % while ~(vslam.isDone)
+   %  a=1+1;
+   % end
+   MapInit = isMapInitialized(vslam);
